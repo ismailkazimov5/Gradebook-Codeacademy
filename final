@@ -1,0 +1,42 @@
+last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+
+# Subjects List
+subjects = ["physics", "calculus", "poetry", "history"]
+print(subjects)
+
+#Grades List
+grades = [98, 97, 85, 88]
+print(grades)
+
+#Gradebook 2D List
+gradebook = [
+  ["Physics", 98], 
+  ["calculus", 97], 
+  ["poetry", 85], 
+  ["history", 88]
+  ]
+print(gradebook)
+
+#appending new computer science test scores 
+gradebook.append(["computer science", 100])
+print(gradebook)
+
+#appending visual arts test scores
+gradebook.append(["visual arts", 93])
+print(gradebook)
+
+#adding +5 extra points visual arts class because professor made a mistake
+gradebook[-1][1] = 98
+print(gradebook)
+
+#switch from a numerical grade value to a Pass/Fail option for your poetry class.
+gradebook[2].remove(85)
+print(gradebook)
+
+gradebook[2].append(["Pass"])
+print(gradebook)
+
+#grades from last semester + current semester
+
+full_gradebook = gradebook +  [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+print(full_gradebook)
